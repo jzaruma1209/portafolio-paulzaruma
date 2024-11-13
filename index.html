@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Paul Zaruma" />
+  <meta name="description" content="No más de 165 caracteres" />
+  <meta name="keywords" content="programador, frontend, experienciaDesarrollo Full Stack,  Frontend,  Backend,  JavaScript,  React,  Node.js,  MongoDB,  MySQL,  APIs REST,TypeScript, Metodologías Ágiles, Scrum, Control de versiones, Git, DevOps,CI/CD (Integración y despliegue continuo),
+  Docker, Pruebas unitarias, Diseño responsivo, Automatización de pruebas, UX/UI, SQL,
+  Python," />
+  <meta name="theme-color" content="#09f" />
+  <!-- Fuentes  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<!-- Fuentes  -->
+
+  <!-- Iconos  -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <title>Portafolio</title>
+
+  <link rel="icon" href="assets/img/logo.png" type="image/png" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <script type="module" src="assets/js/main.js"></script>
+
+  <!-- API de correo para formulario  -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: 'eepJ3aozWvvDMEzPM',
+      });
+    })();
+  </script>
+</head>
+
+<body>
+  <!-- Loader -->
+  <div class="loader">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 237 268" class="loader__logo">
+      <path fill="currentColor"
+        d="M108.473 2.81055C114.675 -0.783262 122.325 -0.783265 128.527 2.81055L226.74 59.7212C232.912 63.298 236.712 69.8919 236.712 77.0259V190.974C236.712 198.108 232.912 204.702 226.74 208.279L128.527 265.189C122.325 268.783 114.675 268.783 108.473 265.189L10.2601 208.279C4.08755 204.702 0.287529 198.108 0.287529 190.974V77.0259C0.287529 69.8919 4.08754 63.298 10.2601 59.7212L108.473 2.81055Z">
+      </path>
+    </svg>
+  </div>
+
+  
+  <header class="header">
+    <nav class="navbar grid--container flex--container">
+      <a class="navbar__logo flex--container" href="#"><i class="bx bxs-registered"> </i>Paul Zaruma</a>
+
+      <div id="nav" class="navbar__menu">
+        <a href="#close"><i class="bx bx-x btn__close navbar__icon flex--container"></i></a>
+
+        <ul class="navbar__list flex--container">
+          <li class="navbar__item">
+            <a class="navbar__link active" href="#home">Inicio</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#about">Acerca de Mí</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#skills">Habilidades</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#projects">Portafolio</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#contact">Contacto</a>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar__toggles flex--container">
+        <div class="navbar__toggle--darkmode flex--container">
+          <input type="checkbox" name="color-scheme" id="darkmode-toggle" class="navbar__toggle--darkmode-input" />
+          <label for="darkmode-toggle" class="navbar__toggle--darkmode-label">
+            <i class="bx bx-sun navbar__toggle--darkmode-sun"></i>
+            <i class="bx bx-moon navbar__toggle--darkmode-moon"></i>
+          </label>
+        </div>
+        <div class="navbar__toggle--language flex--container">
+          <input type="checkbox" id="language-toggle" class="navbar__toggle--language-input" />
+          <label for="language-toggle" class="navbar__toggle--language-label"></label>
+        </div>
+      </div>
+      <a href="#nav"><i class="bx bx-menu btn__open navbar__icon"></i></a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="home">
+      <i class="bx bxl-html5 home__layer home__layer--1 responsive__width" data-speed="-5" style="color: #ff5733;"></i>
+      <i class="bx bxl-javascript home__layer home__layer--2 responsive__width" data-speed="5" style="color: #ff5733;"></i>
+      <i class="bx bxl-css3 home__layer home__layer--3 responsive__width" data-speed="2" style="color: #ff5733;"></i>
+      <i class="bx bxl-nodejs home__layer home__layer--4 responsive__width" data-speed="6" style="color: #ff5733;"></i>
+      <i class="bx bxl-react home__layer home__layer--5 responsive__width" data-speed="10" style="color: #ff5733;"></i>
+      <i class="bx bxl-tailwind-css home__layer home__layer--6 responsive__width" data-speed="-2" style="color: #ff5733;"></i>
+      <i class="bx bxl-redux home__layer home__layer--7 responsive__width" data-speed="4" style="color: #ff5733;"></i>
+      <i class="bx bxl-typescript home__layer home__layer--8 responsive__width" data-speed="-2" style="color: #ff5733;"></i>
+      <i class="bx bxl-git home__layer home__layer--9 responsive__width" data-speed="6" style="color: #ff5733;"></i>
+      <i class="bx bxl-graphql home__layer home__layer--10 responsive__width" data-speed="-7" style="color: #ff5733;"></i>
+      <i class="bx bx-code-alt home__layer home__layer--11 responsive__width" data-speed="-5" style="color: #ff5733;"></i>
+      
+      <div class="home__container grid--container">
+        <div class="home__image">
+         <!---x <img src="assets/img/profile.png" alt="profile photo" title="Paul Zaruma" />-->
+        </div>
+
+        <ul class="home__social flex--container">
+          <li class="home__social-item">
+            <a class="home__social-link" href="http://www.linkedin.com/in/paul-zaruma-lopez-570710337" target="_blank"><i class="bx bxl-linkedin"></i></a>
+          </li>
+          <li class="home__social-item">
+            <a class="home__social-link" href="https://wa.me/593990098047" target="_blank"><i class="bx bxl-whatsapp"></i></a>
+          </li>
+          <li class="home__social-item">
+            <a class="home__social-link" href="https://github.com/jzaruma1209?tab=repositories" target="_blank"><i class="bx bxl-github"></i></a>
+          </li>
+          <li class="home__social-item">
+            <a class="home__social-link" href="#" target="_blank"><i class="bx bx-envelope"></i></a>
+          </li>
+        </ul>
+
+        <div class="home__info">
+          <h1 class="home__title">Hi!, soy Paul</h1>
+
+          <p class="home__description">
+            Soy desarrollador web y disfruto programando. Me apasiona pasar mis días creando y mejorando aplicaciones.
+          </p>
+        </div>
+
+        <div class="home__buttons">
+          <a class="btn btn--primary" href="assets/lang/Curriculum CV Profecional.pdf" title="Descargar mi CV" download="my_cv" rel="noreferrer nofollow">
+            Descargar CV
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="about section">
+      <h2 class="section__title">Acerca de Mí</h2>
+
+      <div class="about__container grid--container">
+        <p class="about__description">
+          Desarrollador con amplia experiencia en múltiples lenguajes y herramientas. Apasionado por crear soluciones innovadoras y eficientes, siempre buscando aprender y mejorar para ofrecer los mejores resultados en cada proyecto.
+        </p>
+
+        <div class="about__cards flex--container">
+          <!--Card 1 -->
+          <div class="about__card">
+            <img class="about__card--img" src="assets/img/me_1.jpg" alt="reunion de compañeros en mi primer trabajo como programador"
+              title="reunion de compañeros en mi primer trabajo como programador" />
+          </div>
+          <!--Card 2 -->
+          <div class="about__card">
+            <img class="about__card--img" src="assets/img/me_2.jpg" alt="primer viaje como programador"
+              title="primer viaje como programador" />
+          </div>
+          <!--Card 3 -->
+          <div class="about__card">
+            <img class="about__card--img" src="assets/img/me_3.jpg" alt="Segundo viaje como programador"
+              title="segundo viaje como programador" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="skills" class="skills section">
+      <h2 class="section__title">Habilidades</h2>
+
+      <div class="skills__container grid--container">
+        <p class="skills__description flex--container">
+          Desarrollo web, programación en múltiples lenguajes, creación y optimización de aplicaciones, resolución de problemas técnicos, aprendizaje y adaptación a nuevas tecnologías.
+        </p>
+
+        <div class="skills__wrapper flex--container">
+          <div class="skills__cards flex--container">
+            <!--Card 1 -->
+            <details class="skills__cards-container" name="moreInfo" open>
+              <summary class="skills__cards-title flex--container">
+                <i class="bx bxl-html5 flex--container"></i>
+              </summary>
+              <div class="skills__card-container">
+                <h3 class="skills__card-title">HTML</h3>
+
+                <p class="skills__card-description">
+                  Tengo un nivel medio en HTML, con capacidad para crear y estructurar documentos web utilizando etiquetas semánticas. Tengo experiencia en la creación de formularios, integración de multimedia y optimización de la accesibilidad web. También puedo implementar diseños responsivos y seguir las mejores prácticas para asegurar un código limpio y eficiente.
+                </p>
+              </div>
+            </details>
+            <!--Card 2 -->
+            <details class="skills__cards-container" name="moreInfo">
+              <summary class="skills__cards-title flex--container">
+                <i class="bx bxl-css3 flex--container"></i>
+              </summary>
+              <div class="skills__card-container">
+                <h3 class="skills__card-title">CSS3</h3>
+
+                <p class="skills__card-description">
+                  Tengo un nivel medio en CSS3, con capacidad para diseñar y estilizar páginas web de manera efectiva. Experiencia en el uso de selectores, propiedades y valores para aplicar estilos. Habilidad en la creación de diseños responsivos utilizando media queries, así como en la implementación de animaciones y transiciones. También me esfuerzo por seguir las mejores prácticas para asegurar un código CSS limpio y mantenible.
+
+
+                </p>
+              </div>
+            </details>
+            <!--Card 3 -->
+            <details class="skills__cards-container" name="moreInfo">
+              <summary class="skills__cards-title flex--container">
+                <i class="bx bxl-javascript flex--container"></i>
+              </summary>
+              <div class="skills__card-container">
+                <h3 class="skills__card-title">Javascript</h3>
+
+                <p class="skills__card-description">
+                  Habilidad en la manipulación del DOM, el manejo de eventos y la implementación de solicitudes AJAX. También puedo utilizar bibliotecas y frameworks como jQuery y React, siguiendo las mejores prácticas para escribir código limpio y eficiente.
+                </p>
+              </div>
+            </details>
+            <!--Card 4 -->
+            <details class="skills__cards-container" name="moreInfo">
+              <summary class="skills__cards-title flex--container">
+                <i class="bx bxl-react flex--container"></i>
+              </summary>
+              <div class="skills__card-container">
+                <h3 class="skills__card-title">React</h3>
+
+                <p class="skills__card-description">
+                  Tengo un nivel medio en React, con capacidad para desarrollar interfaces de usuario dinámicas y eficientes. Experiencia en la creación y gestión de componentes, así como en el manejo del estado y las props. Habilidad en el uso de hooks y en la implementación de rutas con React Router. También sigo las mejores prácticas para estructurar aplicaciones React, asegurando código limpio, modular y reutilizable.
+                </p>
+              </div>
+            </details>
+          </div>
+        </div>
+        <div class="skills__tags flex--container">
+          <h3 class="skills__tags-title">Habilidades Blandas</h3>
+          <div class="skills__tags-container flex--container">
+            <span class="skills__tag">Responsable</span>
+            <span class="skills__tag">Trabajo en equipo</span>
+            <span class="skills__tag">Creativo</span>
+            <span class="skills__tag">Puntual</span>
+            <span class="skills__tag">Proactivo</span>
+            <span class="skills__tag">Autodidacta</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="projects section">
+      <h2 class="section__title">Proyectos</h2>
+
+
+      <div class="projects__container grid--container">
+        <!-- Project 1 -->
+        <div class="projects__project">
+          <div class="projects__inner grid--container">
+            <div class="projects__image">
+              <img src="assets/img/project1.jpg" alt="project 1" title="Ecommerce Vanilla" />
+            </div>
+            <div class="projects__info">
+              <h3 class="projects__name">Proyecto 1</h3>
+              <p class="projects__description">
+               creacion de aplicacion movil con solar 2d 
+              </p>
+
+              <div class="projects__buttons">
+                <button class="btn projects__button" type="button">
+                  VER DEMO
+                </button>
+                <button class="btn projects__button" type="button">
+                  VER CÓDIGO
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="projects__project">
+          <div class="projects__inner grid--container">
+            <div class="projects__image">
+              <img src="assets/img/project2.png" alt="project 1" title="Consumiendo API Pokemon con React" />
+            </div>
+
+            <div class="projects__info">
+              <h3 class="projects__name">Proyecto 2</h3>
+              <p class="projects__description">
+                Creacion de aplicacion de escritorio con java usando modelo MVC (Modelo-vista-controlador)
+              </p>
+
+              <div class="projects__buttons">
+                <button class="btn projects__button" type="button">
+                  VER DEMO
+                </button>
+                <button class="btn projects__button" type="button">
+                  VER CÓDIGO
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Project 3 -->
+        <div class="projects__project">
+          <div class="projects__inner grid--container">
+            <div class="projects__image">
+              <img src="assets/img/project3.jpg" alt="project 1" title="CRUD con React" />
+            </div>
+
+            <div class="projects__info">
+              <h3 class="projects__name">Proyecto 3</h3>
+              <p class="projects__description">
+               creacion de pagina web estatica, usando javascript, css, html 
+              </p>
+
+              <div class="projects__buttons">
+                <button class="btn projects__button" type="button">
+                  VER DEMO
+                </button>
+                <button class="btn projects__button" type="button">
+                  VER CÓDIGO
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Project 4 -->
+        <div class="projects__project">
+          <div class="projects__inner grid--container">
+            <div class="projects__image">
+              <img src="assets/img/project4.png" alt="project 1" title="Aplicación del tiempo con React" />
+            </div>
+
+            <div class="projects__info">
+              <h3 class="projects__name">Proyecto 4</h3>
+              <p class="projects__description">
+                una página web dinámica utilizando HTML, CSS, JavaScript, PHP y mysql.
+              </p>
+
+              <div class="projects__buttons">
+                <button class="btn projects__button" type="button">
+                  VER DEMO
+                </button>
+                <button class="btn projects__button" type="button">
+                  VER CÓDIGO
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact section">
+      <h2 class="section__title">Contacto</h2>
+
+      <div class="contact__container grid--container">
+        <div class="contact__info">
+          <h3 class="contact__info-title">Información de contacto</h3>
+          <p class="contact__info-description">
+            ara cualquier consulta o colaboración, estoy disponible. ¡Espero saber de ti pronto!
+          </p>
+
+          <address class="contact__info-data">
+            <div class="contact__info-item">
+              <i class="bx bxl-whatsapp"></i>
+
+              <span class="contact__info-number">
+                <a href="https://wa.me/593990099265?text=Tu%20mensaje%20aquí
+                " target="_blank"
+                  rel="noreferrer nofollow">Enviar mensaje a WhatsApp</a>
+              </span>
+            </div>
+
+            <div class="contact__info-item">
+              <i class="bx bx-phone"></i>
+
+              <span class="contact__info-number">
+                <a href="tel:593990099265" target="_blank" rel="noreferrer nofollow">
+                  +593 99 009 9265
+                </a>
+              </span>
+            </div>
+
+            <div class="contact__info-item">
+              <i class="bx bxs-envelope"></i>
+
+              <span class="contact__info-mail">
+                <a id="mail" href="mailto:  jzaruma1209@gmail.com" target="_blank" rel="noreferrer nofollow">
+                  jzaruma1209@gmail.com
+                </a>
+              </span>
+            </div>
+
+            <div class="contact__info-item">
+              <i class="bx bx-map"></i>
+
+              <span class="contact__info-map">Cañar - Ecuador. </span>
+            </div>
+          </address>
+        </div>
+        <div class="contact__form">
+          <h3 class="contact__form-title">Enviar mensaje</h3>
+          <form id="form" class="contact__form-container">
+            <div class="contact__form-group">
+              <label for="name" class="contact__form-label">Nombre</label>
+              <input type="text" id="name" name="name" class="contact__form-input" />
+            </div>
+
+            <div class="contact__form-group">
+              <label for="email" class="contact__form-label">Correo</label>
+              <input type="email" id="email" name="email" class="contact__form-input" />
+            </div>
+
+            <div class="contact__form-group">
+              <label for="subject" class="contact__form-label">Asunto</label>
+              <input type="text" id="subject" name="subject" class="contact__form-input" />
+            </div>
+
+            <div class="contact__form-group">
+              <label for="message" class="contact__form-label">Mensaje</label>
+              <textarea id="message" name="message" cols="30" rows="10" class="contact__form-input"></textarea>
+            </div>
+            <dialog id="modal">
+              Formulario enviado con éxito!
+              <button type="reset" id="btn_close-modal">Cerrar</button>
+            </dialog>
+
+            <button type="submit" class="btn contact__form-button">
+              Enviar
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer section">
+    <div class="footer__container grid--container">
+      <div class="footer__info">
+        <h3 class="footer__title">Paul Zaruma</h3>
+        <p class="footer__description">
+          Soy desarrollador full stack con experiencia en la creación de aplicaciones web, abarcando tanto el frontend como el backend. Me enfoco en soluciones eficientes y escalables, siempre buscando mejorar y adaptarme a nuevas tecnologías.
+        </p>
+      </div>
+
+      <div class="footer__social">
+        <h3 class="footer__title">Redes Sociales</h3>
+
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="https://www.facebook.com/paul.zarumalopez" target="_blank" rel="noreferrer nofollow"><i
+                class="bx bxl-facebook"></i></a>
+          </li>
+
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="https://www.instagram.com/paulzaruma12?igsh=MWZrMm83ZGtkNHFpeg==" target="_blank" rel="noreferrer nofollow"><i
+                class="bx bxl-instagram"></i></a>
+          </li>
+
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="https://x.com/LopezPaul735336" target="_blank" rel="noreferrer nofollow"><i
+                class="bx bxl-twitter"></i></a>
+          </li>
+
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#" target="_blank" rel="noreferrer nofollow"><i
+                class="bx bxl-linkedin"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="footer__copy"></p>
+  </footer>
+</body>
+
+</html>
