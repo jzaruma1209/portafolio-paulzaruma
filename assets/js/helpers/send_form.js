@@ -12,7 +12,7 @@ function closeModal() {
 
 function sendEmail() {
 	formDOM.addEventListener('submit', (e) => {
-		e.preventDefault();//evita que se recarge la pagina al enviarlo 
+
 		const params = {
 			name: document.getElementById('name').value,
 			email: document.getElementById('email').value,
